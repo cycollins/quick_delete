@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "bashdb",
+            "request": "launch",
+            "name": "quick_delete run",
+            "program": "${workspaceFolder}/quick_delete.sh",
+            "cwd": "/Users/iBrain/dev",
+            "args": [ "-y" ],
+            "pathBash": "/usr/local/bin/bash5",
+            "pathBashdb": "/usr/local/bin/bashdb",
+            "pathBashdbLib": "/usr/local/share/bashdb"
+        }
+    ]
+}
