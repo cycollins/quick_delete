@@ -10,7 +10,7 @@
             "name": "quick_delete run",
             "program": "${workspaceFolder}/quick_delete.sh",
             "cwd": "/Users/iBrain/dev",
-            "args": [ "-y" ],
+            "args": [ "-o", "-y" ],
             "pathBash": "/usr/local/bin/bash5",
             "pathBashdb": "/usr/local/bin/bashdb",
             "pathBashdbLib": "/usr/local/share/bashdb"

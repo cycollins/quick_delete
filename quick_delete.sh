@@ -27,10 +27,10 @@ if (( "$auto_yes" == 0 )); then
   fi
 fi
 
-declare -ra submodule_names=( qtandroidextras qtbase qtdeclarative qtdoc qtgraphicaleffects qtimageformats qtlocation qtmacextras qtmultimedia qtqa qtquickcontrols qtquickcontrols2 qtrepotools qtsensors qtsvg qttools qttranslations qtvirtualkeyboard qtwebview qtwinextras qtxmlpatterns )
+declare -ra submodule_names=( tqtc-qtandroidextras tqtc-qtbase tqtc-qtdeclarative tqtc-qtdoc tqtc-qtgraphicaleffects tqtc-qtimageformats tqtc-qtlocation tqtc-qtmacextras tqtc-qtmultimedia qtqa tqtc-qtquickcontrols tqtc-qtquickcontrols2 qtrepotools tqtc-qtsensors tqtc-qtsvg tqtc-qttools tqtc-qttranslations tqtc-qtvirtualkeyboard tqtc-qtwebview tqtc-qtwinextras tqtc-qtxmlpatterns qtlocation-mapboxgl qtdeclarative-testsuites qtxmlpatterns-testsuites )
 
 for repo in ${submodule_names[@]}; do
-   hub delete -y "${organization}qt_${repo}"
+   hub delete -y "${organization}${repo}"
 done
 
 hub delete -y "${organization}qt"
